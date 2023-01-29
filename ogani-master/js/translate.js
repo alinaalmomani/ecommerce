@@ -11,7 +11,7 @@ function Translate() {
     _self = this;
     var xrhFile = new XMLHttpRequest();
     //load content data
-    xrhFile.open("GET", "./js/lang/" + this.lng + ".json");//loads the json file according to the language
+    xrhFile.open("GET", "../js/lang/" + this.lng + ".json");//loads the json file according to the language
     xrhFile.onreadystatechange = function () {
       if (xrhFile.readyState === 4) {
         if (xrhFile.status === 200 || xrhFile.status == 0) {
